@@ -1,0 +1,128 @@
+.todo-container {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+  }
+  
+  .todo-subtitle {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+  }
+  
+  .todo-input-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .todo-input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+  }
+  
+  .todo-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  }
+  
+  .todo-add-button {
+    padding: 0.5rem 1.5rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+  }
+  
+  .todo-add-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+  }
+  
+  .todo-item.completed {
+    background-color: #f3f4f6;
+  }
+  
+  .todo-checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .todo-checkbox:checked {
+    background-color: #10b981;
+    border-color: #10b981;
+  }
+  
+  .todo-text {
+    flex: 1;
+    color: #374151;
+  }
+  
+  .todo-text.completed {
+    text-decoration: line-through;
+    color: #9ca3af;
+  }
+  
+  .todo-delete-button {
+    padding: 0.25rem;
+    color: #9ca3af;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .todo-delete-button:hover {
+    color: #ef4444;
+  }
+  
+  .todo-edit-input {
+    flex: 1;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+  }
+  
+  .todo-edit-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  }
+  
+  .todo-empty {
+    text-align: center;
+    padding: 1.5rem 0;
+    color: #6b7280;
+  }
